@@ -1,1 +1,1 @@
-# rollingstone-cover-story-tate-mcrae
+https://shoneal.github.io/rollingstone-cover-story-tate-mcrae/
