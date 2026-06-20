@@ -37,9 +37,24 @@ document.addEventListener("DOMContentLoaded", () => {
   changingTheme(); // Смена темы
   switchingStickinessHeader(bodyElements.cardImage, bodyElements.header); // Липкий выезжающий header
 
-  createImage(getImagePath, bodyElements.cardImage, basicLink, "card", personName, true); // Создание картинки в шапке
+  createImage(
+    getImagePath,
+    showImage,
+    bodyElements.cardImage,
+    basicLink,
+    "card",
+    personName,
+    true,
+  ); // Создание картинки в шапке
 
-  renderGallery(getImagePath, currentData, bodyElements.content, basicLink, personName); // Вывод элементов в структуру HTML
+  renderGallery(
+    getImagePath,
+    showImage,
+    currentData,
+    bodyElements.content,
+    basicLink,
+    personName,
+  ); // Вывод элементов в структуру HTML
 
   initApp(bodyElements, renderLastArticlesAndDate, coversLinks, listsLinks); // Общая для всех инициализация
 }); // Изначальная инициализация
