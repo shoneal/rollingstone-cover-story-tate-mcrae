@@ -35,7 +35,7 @@ const { basicLink, currentData } = getSectionContext(
 document.addEventListener("DOMContentLoaded", () => {
   document.body.classList.add(section); // Название сайта как класс в body
   changingTheme(); // Смена темы
-  switchingStickinessHeader(bodyElements.cardImage, bodyElements.header); // Липкий выезжающий header
+  switchingStickinessHeader(bodyElements.cardMarker, bodyElements.header); // Липкий выезжающий header
 
   createImage(
     getImagePath,
@@ -62,7 +62,7 @@ let ticking = false; // Задержка для скролла
 window.addEventListener("scroll", () => {
   if (!ticking) {
     requestAnimationFrame(() => {
-      switchingStickinessHeader(bodyElements.title, bodyElements.header); // Липкий выезжающий header
+      switchingStickinessHeader(bodyElements.cardMarker, bodyElements.header); // Липкий выезжающий header
 
       ticking = false;
     });
